@@ -1,0 +1,73 @@
+.slider {
+   margin: 0 auto;
+   overflow: hidden;
+   max-width: 650px;
+   position: relative;
+   height: 400px;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
+      rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+      rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.slides-wrapper,
+.slide {
+   width: 100%;
+   height: 100%;
+}
+
+.slides-wrapper {
+   white-space: nowrap;
+   transition: ease 1000ms;
+}
+
+.slide {
+   display: inline-block;
+}
+
+.slides-navigation {
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   bottom: 5%;
+}
+
+.slide-nav-button {
+   display: inline-block;
+   height: 15px;
+   width: 15px;
+   border-radius: 50%;
+   cursor: pointer;
+   margin: 15px 7px 0px;
+   background-color: #c4c4c4;
+}
+
+.slide-nav-button.active {
+   background-color: black;
+}
+
+.slide-next,
+.slide-prev {
+   position: absolute;
+   top: 44%;
+}
+
+.slide-prev {
+   left: 3%;
+}
+
+.slide-next {
+   right: 3%;
+}
+
+.slide-prev button,
+.slide-next button {
+   height: 35px;
+   width: 35px;
+   border-radius: 25px;
+   border: none;
+   cursor: pointer;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
+      rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+      rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   font-size: 19px;
+}
